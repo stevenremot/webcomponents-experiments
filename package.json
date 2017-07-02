@@ -1,0 +1,21 @@
+{
+  "name": "webcomponent-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server:start": "webpack-dev-server -d",
+    "compile": "webpack"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.10.0",
+    "preact": "^8.1.0",
+    "skatejs": "^5.0.0-alpha.10",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

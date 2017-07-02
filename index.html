@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web components dashboard</title>
+        <script src="https://unpkg.com/skatejs-web-components/dist/index.min.js"></script>
+        <script src="dist/dashboard.js"></script>
+        <script src="dist/elements/random-sentence.js"></script>
+
+        <style>
+         body {
+             font-family: 'Helvetica', 'sans-serif';
+             font-size: 13px;
+             margin: 0;
+             padding: 0;
+
+             --color-header-bg: black;
+             --color-header-fg: #f0f0f0;
+             --color-element: #cecece;
+         }
+        </style>
+    </head>
+    <body>
+        <x-header title="Dashboard">
+        </x-header>
+        <x-page-content>
+            <x-elements-container>
+                <x-element-wrapper>
+                    <x-random-sentence></x-random-sentence>
+                </x-element-wrapper>
+                <x-element-wrapper>
+                    <x-random-sentence></x-random-sentence>
+                </x-element-wrapper>
+                <x-element-wrapper>
+                    <x-random-sentence></x-random-sentence>
+                </x-element-wrapper>
+            </x-elements-container>
+        </x-page-content>
+    </body>
+</html>
